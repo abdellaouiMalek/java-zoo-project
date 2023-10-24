@@ -1,7 +1,6 @@
 package main;
 
-import entities.Animal;
-import entities.Zoo;
+import entities.*;
 
 public class ZooManagement {
 
@@ -16,9 +15,6 @@ public class ZooManagement {
         Zoo zoo = new Zoo("Nahli Park", "Ghazela");
 
         Animal dog = new Animal("Canine", "Sushi", 2, true);
-        Animal fish = new Animal("test", "khalil", 2, true);
-
-        zoo.addAnimal(fish);
 
         System.out.println("myZoo : ");
         System.out.println(myZoo);
@@ -39,5 +35,21 @@ public class ZooManagement {
 
         System.out.println("Comparaison des Zoo :");
         System.out.println(myZoo.comparerZoo(myZoo,zoo));
+
+
+        System.out.println("Aquatic animals :");
+
+        Aquatiques fish =new Aquatiques("Aquatiques", "dori", 2, true,"bikini bottom");
+        Dolphin orca =new Dolphin("Delphinidae", "orca", 2, true,"bhar hassen",100f );
+        Penguin skipper=new Penguin("Penguins", " Skipper", 2, true,"Antarctica",20f);
+
+        System.out.println(fish);
+        System.out.println(orca);
+        System.out.println(skipper);
+
+        System.out.println("swimming test : ");
+        orca.swim();
+        skipper.swim();
+
     }
 }
