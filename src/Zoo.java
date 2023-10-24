@@ -1,33 +1,29 @@
 public class Zoo {
 
-    static final int NUMBER_OF_CAGES = 25;
     Animal[] animals;
     String name, city;
+    int nbrCages;
+
     int nbrAnimals;
 
     public Zoo() {
     }
 
-    public Zoo(String name, String city) {
-        animals = new Animal[NUMBER_OF_CAGES];
+    public Zoo(String name, String city, int nbrCages) {
+        animals = new Animal[nbrCages];
         this.name = name;
         this.city = city;
-    }
-
-    static Zoo comparerZoo(Zoo z1, Zoo z2) {
-        if (z1.nbrAnimals > z2.nbrAnimals)
-            return z1;
-        return z2;
+        this.nbrCages = nbrCages;
     }
 
     void displayZoo() {
-        System.out.println("Name: " + name + ", City: " + city + ", N° Cages: " + NUMBER_OF_CAGES + " N° animals: " + nbrAnimals);
+        System.out.println("Name: " + name + ", City: " + city + ", N° Cages/Animals: " + nbrCages);
     }
 
     boolean addAnimal(Animal animal) {
         if (searchAnimal(animal) != -1)
             return false;
-        if (nbrAnimals == NUMBER_OF_CAGES)
+        if (nbrAnimals == nbrCages)
             return false;
         animals[nbrAnimals] = animal;
         nbrAnimals++;
@@ -40,14 +36,14 @@ public class Zoo {
             return false;
         for (int i = indexAnimal; i < nbrAnimals; i++) {
             animals[i] = animals[i + 1];
+            animals[nbrAnimals] = null;
+            this.nbrAnimals--;
         }
-        animals[nbrAnimals] = null;
-        this.nbrAnimals--;
         return true;
     }
 
     void displayAnimals() {
-        System.out.println("List of animals of " + name + ":");
+        System.out.println("Liste des animaux de " + name + ":");
         for (int i = 0; i < nbrAnimals; i++) {
             System.out.println(animals[i]);
         }
@@ -62,12 +58,9 @@ public class Zoo {
         return index;
     }
 
-    boolean isZooFull() {
-        return nbrAnimals == NUMBER_OF_CAGES;
-    }
 
     @Override
     public String toString() {
-        return "Name: " + name + ", City: " + city + ", N° Cages: " + NUMBER_OF_CAGES + " N° animals: " + nbrAnimals;
+        return "Name: " + name + ", City: " + city + ", N° Cages/Animals: " + nbrCages;
     }
 }

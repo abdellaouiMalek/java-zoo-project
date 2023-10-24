@@ -7,43 +7,29 @@ public class ZooManagement {
         lion.family = "Cats";
         lion.isMammal = true;
 
-        Zoo myZoo = new Zoo("bélvédére", "ras jebel");
-        Zoo notMyZoo = new Zoo("WaterPark", "bizerte");
+        Zoo myZoo = new Zoo();
+        myZoo.name = "Wildlife Park";
+        myZoo.city = "Ariana";
+        myZoo.nbrCages = 25;
+        myZoo.animals = new Animal[25];
 
 
         Animal dog = new Animal("Canine", "Snoopy", 2, true);
 
+        System.out.println(myZoo);
+        System.out.println(myZoo.toString());
 
-        /*System.out.println(myZoo.addAnimal(lion));
+        System.out.println(myZoo.addAnimal(lion));
         System.out.println(myZoo.addAnimal(dog));
 
         myZoo.displayAnimals();
 
-        System.out.println(myZoo.searchAnimal(dog));*/
-        Animal dog2 = new Animal("Canine", "lll", 2, true);
-//        System.out.println(myZoo.searchAnimal(dog2));
+        System.out.println(myZoo.searchAnimal(dog));
+        Animal dog2 = new Animal("Canine", "Snoopy", 2, true);
+        System.out.println(myZoo.searchAnimal(dog2));
 
-        //   System.out.println(myZoo.removeAnimal(dog));
+        System.out.println(myZoo.removeAnimal(dog));
         myZoo.displayAnimals();
-
-
-//        System.out.println(myZoo);
-
-/*        myZoo.addAnimal(lion);
-        myZoo.addAnimal(dog);
-        myZoo.addAnimal(dog2);
-        myZoo.displayAnimals();
-        System.out.println("a" + myZoo.removeAnimal(lion));
-        myZoo.displayAnimals();
-        System.out.println("a" + myZoo.removeAnimal(dog2));
-        myZoo.displayAnimals();
-        System.out.println("a" + myZoo.removeAnimal(dog));
-        myZoo.displayAnimals();*/
-
-        System.out.println("teeeeeeeeeeeeeeeeeeeeeeeeeeeeest");
-
-        System.out.println(Zoo.comparerZoo(myZoo, notMyZoo));
-        System.out.println(myZoo.isZooFull());
 
     }
 
