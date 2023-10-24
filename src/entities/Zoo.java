@@ -1,3 +1,5 @@
+package entities;
+
 public class Zoo {
 
     static final int CAGES_NBR = 25;
@@ -20,17 +22,17 @@ public class Zoo {
         System.out.println("Name: " + name + ", City: " + city + ", N° Cages/Animals: " + CAGES_NBR);
     }
 
-    boolean addAnimal(Animal animal) {
+    public boolean addAnimal(Animal animal) {
         if (searchAnimal(animal) != -1)
             return false;
-        if (animalsNbr == CAGES_NBR)
+        if (isZooFull())
             return false;
         animals[animalsNbr] = animal;
         animalsNbr++;
         return true;
     }
 
-    boolean removeAnimal(Animal animal) {
+    public boolean removeAnimal(Animal animal) {
         int indexAnimal = searchAnimal(animal);
         if (indexAnimal == -1)
             return false;
@@ -42,14 +44,14 @@ public class Zoo {
         return true;
     }
 
-    void displayAnimals() {
+    public void displayAnimals() {
         System.out.println("Liste des animaux de " + name + ":");
         for (int i = 0; i < animalsNbr; i++) {
             System.out.println(animals[i]);
         }
     }
 
-    int searchAnimal(Animal animal) {
+    public int searchAnimal(Animal animal) {
         int index = -1;
         for (int i = 0; i < animalsNbr; i++) {
             if (animal.name == animals[i].name)
@@ -62,10 +64,8 @@ public class Zoo {
         return animalsNbr == CAGES_NBR ;
     }
 
-    Zoo comparerZoo( Zoo zoo1 , Zoo zoo2)
+    public Zoo comparerZoo(Zoo zoo1, Zoo zoo2)
     {
-        System.out.println(" Le zoo 1 : " + zoo1.animalsNbr );
-        System.out.println(" Le zoo 2 : " + zoo2.animalsNbr );
         if (zoo1.animalsNbr > zoo2.animalsNbr)
         {
             System.out.println(" Le zoo " + zoo1.name + " a plus d'animaux");
