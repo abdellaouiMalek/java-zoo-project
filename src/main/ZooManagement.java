@@ -1,3 +1,8 @@
+package main;
+
+import entities.Animal;
+import entities.Zoo;
+
 public class ZooManagement {
 
     public static void main(String[] args) {
