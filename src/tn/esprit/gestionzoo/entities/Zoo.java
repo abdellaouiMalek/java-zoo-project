@@ -3,12 +3,12 @@ package tn.esprit.gestionzoo.entities;
 public class Zoo {
 
     public static final int NUMBER_OF_CAGES = 25;
-    public static final int NUMBER_OF_AQUATICS = 10;
+    public static final int NUMBER_OF_AQUATICS = 10; // zid hethi
     private Animal[] animals;
     private String name, city;
     private int nbrAnimals;
     int nbrAquatics = 0;
-    Aquatic[] aquaticAnimals;
+    Aquatic[] aquaticAnimals; // zid hethi
 
 
     public Zoo() {
@@ -18,7 +18,7 @@ public class Zoo {
         animals = new Animal[NUMBER_OF_CAGES];
         this.name = name;
         this.city = city;
-        this.aquaticAnimals = new Aquatic[NUMBER_OF_AQUATICS];
+        this.aquaticAnimals = new Aquatic[NUMBER_OF_AQUATICS]; // zid hethi
     }
 
     public static Zoo comparerZoo(Zoo z1, Zoo z2) {
@@ -112,7 +112,7 @@ public class Zoo {
     public String toString() {
         return "Zoo{ Name: " + name + ", City: " + city + ", N° Cages: " + NUMBER_OF_CAGES + " N° animals: " + nbrAnimals + "}";
     }
-
+    // zid men hne lel lekher
     public void addAquaticAnimal(Aquatic aquatic) {
         if (nbrAquatics < NUMBER_OF_AQUATICS) {
             aquaticAnimals[nbrAquatics] = aquatic;
