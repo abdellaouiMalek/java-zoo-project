@@ -1,8 +1,12 @@
+package entities;
+
+
 public class Animal {
 
-    String family, name;
-    int age;
-    boolean isMammal;
+    public String family;
+    public String name;
+    public int age;
+    public boolean isMammal;
 
     public Animal() {
 
