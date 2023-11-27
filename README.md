@@ -25,10 +25,10 @@
 
 Welcome to the Zoo Management System, developed as part of a Java course! This Java-based project simplifies the organization and handling of animals in a zoo. It demonstrates key Java concepts while providing a practical and user-friendly solution for efficient zoo management.
 
+### Built With
 
+* [![Java][Java]][https://dev.java/]
 
-
-## Table of contents
 ## 🌟 Features 
 ## 🗂 Structure 
 
