@@ -13,7 +13,7 @@
     <li><a href="#usage">Features</a></li>
     <li><a href="#roadmap">Structure</a></li>
         <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#Getting Started">Getting Started</a>
       <ul>
         <li><a href="#installation">Installation</a></li>
       </ul>
