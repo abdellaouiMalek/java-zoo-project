@@ -30,7 +30,7 @@ Welcome to the Zoo Management System, developed as part of a Java course! This J
 * [Java](https://dev.java/)
 
 ## 🌟 Features 
-1. Animal Handling :
+### 1. Animal Handling :
  Create, display and manage Animal Instances.
 2. Zoo Operations :
  Control Animals: Add, remove, find, and see animals in the zoo easily.
