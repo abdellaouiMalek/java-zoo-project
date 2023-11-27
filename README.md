@@ -5,15 +5,15 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#Description">Description</a>
+      <a href="#-description">Description</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Features</a></li>
-    <li><a href="#roadmap">Structure</a></li>
+    <li><a href="#-features">Features</a></li>
+    <li><a href="#-structure">Structure</a></li>
         <li>
-      <a href="#Getting-Started">Getting Started</a>
+      <a href="#-getting-started">Getting Started</a>
       <ul>
         <li><a href="#installation-">Installation</a></li>
       </ul>
