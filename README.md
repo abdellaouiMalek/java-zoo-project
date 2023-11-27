@@ -1,12 +1,8 @@
-# java-zoo-project
-This Java-based repository contains a project for digitizing and automating zoo management operations.
-# Foobar
+# Zoo management system 
 
-Foobar is a Python library for dealing with word pluralization.
+## Description :
 
-## Installation
-
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Welcome to the Zoo Management System, developed as part of a Java course! This Java-based project simplifies the organization and handling of animals in a zoo. It demonstrates key Java concepts while providing a practical and user-friendly solution for efficient zoo management.
 
 ```bash
 pip install foobar
