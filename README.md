@@ -27,7 +27,7 @@ Welcome to the Zoo Management System, developed as part of a Java course! This J
 
 ### Built With
 
-* [![Java]](https://dev.java/)
+* [Java](https://dev.java/)
 
 ## 🌟 Features 
 ## 🗂 Structure 
