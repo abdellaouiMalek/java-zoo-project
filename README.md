@@ -34,6 +34,7 @@ Welcome to the Zoo Management System, developed as part of a Java course! This J
 
 
 ## 🛠️ Getting Started  
+### Installation :
 Java Development Kit (JDK) version 17.
 [YOU CAN INSTALL IT FROM HERE](https://www.oracle.com/java/technologies/downloads/#java17).
 
