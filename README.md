@@ -32,9 +32,9 @@ Welcome to the Zoo Management System, developed as part of a Java course! This J
 ## 🌟 Features 
  ### 1. Animal Handling :
  Create, display and manage Animal Instances.
-2. Zoo Operations :
+### 2. Zoo Operations :
  Control Animals: Add, remove, find, and see animals in the zoo easily.
-3. Error Handling
+### 3. Error Handling
  Fix Problems: Deal with age and zoo size issues to keep everything running smoothly.
 4. Animal Types and Behavior
  Different Kinds of Animals: Handle various animal types (Aquatic, Terrestrial).
