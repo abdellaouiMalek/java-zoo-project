@@ -42,7 +42,22 @@ Welcome to the Zoo Management System, developed as part of a Java course! This J
  Special Things Animals Do: Make animals do specific actions, like swimming for aquatic animals and other unique behaviors.
 ### 6. Interactions
  How Animals Get Along: See and manage how animals talk, play, or live together in the zoo.
+ 
 ## 🗂 Structure 
+### 1.Entities Folder (src/entities)
+Holds Different Things: This folder contains classes that represent various things (like animals or parts of the zoo) in the zoo management system.
+
+### 2.Enums Folder (src/enums)
+Sorts Animal Diets: This folder has lists that define what animals eat, categorizing them as meat-eaters 🥩, plant-eaters 🌱, or both 🥕 in the zoo system.
+
+### 3.Exceptions Folder (src/exceptions)
+Handles Mistakes: This folder contains special classes that deal with problems like wrong ages or when the zoo is full in the zoo management system.
+
+### 4.Interfaces Folder (src/interfaces)
+Defines Animal Diets: This folder contains plans that describe what animals eat, like meat 🥩, plants 🌱, or both 🥕, used to organize them in the zoo system.
+
+### 5.Main ZooManagement Folder (src/main/ZooManagement)
+Starts Everything: This folder is the starting point of the zoo management system. It's where the system begins its work.
 
 
 ## 🛠️ Getting Started  
