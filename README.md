@@ -36,11 +36,11 @@ Welcome to the Zoo Management System, developed as part of a Java course! This J
  Control Animals: Add, remove, find, and see animals in the zoo easily.
 ### 3. Error Handling
  Fix Problems: Deal with age and zoo size issues to keep everything running smoothly.
-###4. Animal Types and Behavior
+### 4. Animal Types and Behavior
  Different Kinds of Animals: Handle various animal types (Aquatic, Terrestrial).
-###5. Behavioral Actions
+### 5. Behavioral Actions
  Special Things Animals Do: Make animals do specific actions, like swimming for aquatic animals and other unique behaviors.
-###6. Interactions
+### 6. Interactions
  How Animals Get Along: See and manage how animals talk, play, or live together in the zoo.
 ## 🗂 Structure 
 
