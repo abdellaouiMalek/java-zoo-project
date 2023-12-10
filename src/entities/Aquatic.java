@@ -1,6 +1,6 @@
 package entities;
 
-public non-sealed class Aquatic extends Animal {
+public sealed class Aquatic extends Animal permits Dolphin, Penguin {
 
     protected String habitat;
 
