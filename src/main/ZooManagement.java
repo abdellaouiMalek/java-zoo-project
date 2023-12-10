@@ -1,6 +1,7 @@
 package main;
 
 import entities.*;
+import enums.Food;
 import exceptions.InvalidAgeException;
 import exceptions.ZooFullException;
 
@@ -69,7 +70,7 @@ public class ZooManagement {
 
         // prosit 7
 
-        Zoo myZoo = new Zoo("Wildlife Park", "Ariana");
+       /* Zoo myZoo = new Zoo("Wildlife Park", "Ariana");
         Animal dog = new Animal("Canine", "Snoopy", 2, true);
         Animal cat = new Animal("Canine", "Bicha", 1, false);
         Animal fish = new Animal("Mammal", "Nemo", -4, false);
@@ -85,6 +86,18 @@ public class ZooManagement {
         }catch(InvalidAgeException | ZooFullException ex){
             System.err.println(ex.getMessage());
         }
+    } */
+        // prosit 8
+        Aquatic aquatic = new Aquatic("Fish", "Sardine", 2, true, "Sea");
+        Terrestrial terrestrial = new Terrestrial("Panda", "Narla", 4, true, 2);
+        Dolphin dolphin = new Dolphin("Delphinidae", "Flipper", 5, true, "Ocean", 14.5f);
+        Penguin penguin = new Penguin("Spheniscidae", "Skipper", 3, true, "Ocean", 25.3f);
+
+        Food food = Food.MEAT;
+        Food plantsAndMeet = Food.BOTH;
+
+        penguin.eatMeat(food);
+        terrestrial.eatPlantAndMeet(plantsAndMeet);
     }
     }
 

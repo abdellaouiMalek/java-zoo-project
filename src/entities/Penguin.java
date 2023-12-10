@@ -1,6 +1,9 @@
 package entities;
 
-public class Penguin extends Aquatic {
+import enums.Food;
+import interfaces.Carnivore;
+
+public non-sealed class Penguin extends Aquatic implements Carnivore<Food> {
 
     private float swimmingDepth;
 
@@ -19,5 +22,10 @@ public class Penguin extends Aquatic {
     @Override
     public String toString() {
         return super.toString() + ", swimmingDepth:" + swimmingDepth;
+    }
+
+    @Override
+    public void eatMeat(Food meat) {
+        System.out.println("eats meet");
     }
 }
