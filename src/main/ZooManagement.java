@@ -1,55 +1,90 @@
 package main;
 
 import entities.*;
+import exceptions.InvalidAgeException;
+import exceptions.ZooFullException;
 
 public class ZooManagement {
 
     public static void main(String[] args) {
-        Animal lion = new Animal();
-        lion.name = "Stitch";
-        lion.age = 8;
-        lion.family = "Cats";
-        lion.isMammal = true;
+        // prosit 1 -> 6
+        /*  Animal lion = new Animal();
+        lion.setName("Simba");
+        lion.setAge(8);
+        lion.setFamily("Cats");
+        lion.setMammal(true);
 
-        Zoo myZoo = new Zoo("Jurasic Park", "Ras Jebel");
-        Zoo zoo = new Zoo("Nahli Park", "Ghazela");
+        Zoo myZoo = new Zoo("Wildlife Park", "Ariana");
+        Zoo notMyZoo = new Zoo("WaterPark", "Siliana");
 
-        Animal dog = new Animal("Canine", "Sushi", 2, true);
 
-        System.out.println("myZoo : ");
-        System.out.println(myZoo);
-        System.out.println(myZoo.toString());
+        Animal dog = new Animal("Canine", "Snoopy", 2, true);
 
-        System.out.println("Ajout d'un animal : ");
+
         System.out.println(myZoo.addAnimal(lion));
         System.out.println(myZoo.addAnimal(dog));
 
         myZoo.displayAnimals();
 
         System.out.println(myZoo.searchAnimal(dog));
-        Animal dog2 = new Animal("Canine", "Lili", 2, true);
+        Animal dog2 = new Animal("Canine", "lll", 2, true);
         System.out.println(myZoo.searchAnimal(dog2));
 
-        System.out.println(myZoo.removeAnimal(dog));
         myZoo.displayAnimals();
 
-        System.out.println("Comparaison des Zoo :");
-        System.out.println(myZoo.comparerZoo(myZoo,zoo));
+        System.out.println(myZoo);
 
+        myZoo.addAnimal(lion);
+        myZoo.addAnimal(dog);
+        myZoo.addAnimal(dog2);
+        myZoo.displayAnimals();
 
-        System.out.println("Aquatic animals :");
+        myZoo.setName("Belvedere Park");
+        Zoo notMyZoo1 = Zoo.comparerZoo(myZoo, notMyZoo);
+        System.out.println(notMyZoo1);
 
-        Aquatiques fish =new Aquatiques("Aquatiques", "dori", 2, true,"bikini bottom");
-        Dolphin orca =new Dolphin("Delphinidae", "orca", 2, true,"bhar hassen",100f );
-        Penguin skipper=new Penguin("Penguins", " Skipper", 2, true,"Antarctica",20f);
+        System.out.println("-------------------------------------------------------");
+        Aquatic aquatic = new Aquatic("Fish", "Sardine", 2, true, "Sea");
+        Terrestrial terrestrial = new Terrestrial("Panda", "Narla", 4, true, 2);
+        Dolphin dolphin = new Dolphin("Delphinidae", "Flipper", 5, true, "Ocean", 14.5f);
+        Penguin penguin = new Penguin("Spheniscidae", "Skipper", 3, true, "Ocean", 25.3f);
 
-        System.out.println(fish);
-        System.out.println(orca);
-        System.out.println(skipper);
+        System.out.println(aquatic);
+        System.out.println(terrestrial);
+        System.out.println(dolphin);
+        System.out.println(penguin);
 
-        System.out.println("swimming test : ");
-        orca.swim();
-        skipper.swim();
+        aquatic.swim();
+        dolphin.swim();
+        penguin.swim();
 
+        System.out.println("-------------------------------------------------------");
+        myZoo.addAquaticAnimal(dolphin);
+        myZoo.addAquaticAnimal(penguin);
+        System.out.println("La profondeur = " + myZoo.maxPenguinSwimmingDepth());
+        myZoo.displayNumberOfAquaticsByType();
+
+        System.out.println(dolphin.equals(penguin));
+    } */
+
+        // prosit 7
+
+        Zoo myZoo = new Zoo("Wildlife Park", "Ariana");
+        Animal dog = new Animal("Canine", "Snoopy", 2, true);
+        Animal cat = new Animal("Canine", "Bicha", 1, false);
+        Animal fish = new Animal("Mammal", "Nemo", -4, false);
+        Animal animal = new Animal("Otariidae", "idk", 3, true);
+        Penguin penguin = new Penguin("Spheniscidae", "Skipper", 3, true, "Ocean", 25.3f);
+
+        try {
+            myZoo.addAnimal(dog);
+            myZoo.addAnimal(cat);
+            myZoo.addAnimal(fish);
+            myZoo.addAnimal(animal);
+            myZoo.addAnimal(penguin);
+        }catch(InvalidAgeException | ZooFullException ex){
+            System.err.println(ex.getMessage());
+        }
     }
-}
+    }
+
