@@ -1,4 +1,4 @@
-package tn.esprit.gestionzoo.entities;
+package entities;
 
 public non-sealed class Aquatic extends Animal {
 
@@ -21,7 +21,6 @@ public non-sealed class Aquatic extends Animal {
         return super.toString() + ", habitat:" + habitat;
     }
 
-    // zid hethi
     @Override
     public boolean equals(Object obj) {
         if (obj == null)

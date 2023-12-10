@@ -1,20 +1,23 @@
 package entities;
 
-public class Penguin extends Aquatiques{
-    private float swimmingDepth ;
+public class Penguin extends Aquatic {
 
-    public Penguin(String family, String name, int age, boolean isMammal, String habitat,float swimmingDepth) {
+    private float swimmingDepth;
+
+    public Penguin() {
+    }
+
+    public Penguin(String family, String name, int age, boolean isMammal, String habitat, float swimmingDepth) {
         super(family, name, age, isMammal, habitat);
         this.swimmingDepth = swimmingDepth;
     }
-    @Override
-    public String toString() {
-        return super.toString() + ", swimmingDepth:" + swimmingDepth;
+
+    public float getSwimmingDepth() {
+        return this.swimmingDepth;
     }
 
     @Override
-    public void swim() {
-        super.swim();
-        System.out.println("This Penguin is swimming.");
+    public String toString() {
+        return super.toString() + ", swimmingDepth:" + swimmingDepth;
     }
 }
