@@ -1,8 +1,16 @@
 import entities.Employe;
 import entities.Departement;
+import entities.Etudiant;
 import entities.SocieteArrayList;
 import entities.DepartementHashSet;
 import entities.AffectationHashMap;
+import entities.StudentManagement;
+import java.util.*;
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
+import java.util.stream.Stream;
 
 public class Main {
     public static void main(String[] args) {
@@ -41,7 +49,7 @@ public class Main {
         System.out.println("************** Tri département par ID : *************");
         System.out.println(Depart.trierDepartementById());
     } */
-        // ------------------Prosit 11------------------
+        /* ------------------Prosit 11------------------
         AffectationHashMap affectationHashMap = new AffectationHashMap();
         Employe employee1 = new Employe(1, "Dridi", "Khalil", "27", 2);
         Employe employee2 = new Employe(2, "Seltana", "Malek", "22", 4);
@@ -68,5 +76,33 @@ public class Main {
         affectationHashMap.supprimerEmployetDepartement(employee3, department2);
         System.out.println("************** Affichage départements + employés aprés suppression : *************");
         affectationHashMap.afficherEmployesEtDepartements();
+    } */
+
+        // ------------------Prosit 12 ------------
+            List<Etudiant> studentList = new ArrayList<>();
+            StudentManagement studentManagement = new StudentManagement();
+
+            Etudiant student1 = new Etudiant(2, "Malek", 4);
+            Etudiant student2 = new Etudiant(3, "titi", 15);
+
+            studentManagement.addStudent(studentList, student2);
+            studentManagement.addStudent(studentList, student1);
+
+            Consumer<Etudiant> studentConsumer = student -> System.out.println(student.toString());
+            System.out.println("********** Affichage des étudiants en utilisant consumer *********");
+            studentList.forEach(studentConsumer);
+
+            Predicate<Etudiant> studentPredicate = student -> student.getNom().startsWith("t");
+            Function<Etudiant, String> studentFunction = Etudiant::getNom;
+            System.out.println("********** Affichage des étudiants dont le nom commence par 't' *********");
+            studentList.stream()
+                    .filter(studentPredicate)
+                    .map(studentFunction)
+                    .forEach(System.out::println);
+
+            Comparator<Etudiant> studentComparator = Comparator.comparingInt(Etudiant::getId);
+            System.out.println("********** Tri des étudiants en utilisant comparator *********");
+            studentList.sort(studentComparator);
+            studentList.forEach(studentConsumer);
+        }
     }
-}

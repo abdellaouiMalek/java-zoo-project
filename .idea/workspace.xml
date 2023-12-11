@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fda471ef-40cd-4676-981c-63e1f5ecea43" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/entities/AffectationHashMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/Etudiant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/StudentManagement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/Management.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -25,7 +27,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="prosit9" />
+        <entry key="$PROJECT_DIR$" value="prosit11" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,7 +47,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "prosit11",
+    "git-widget-placeholder": "prosit12",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
