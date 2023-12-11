@@ -11,17 +11,17 @@ public class Main {
         S.ajouterEmploye(e2);
         S.ajouterEmploye(e1);
         S.ajouterEmploye(e3);
-
+        System.out.println("************** Recherche employé : *************");
         System.out.println(S.rechercherEmploye(e1));
         S.displayEmploye();
-
+        System.out.println("************** Supprimer employé : *************");
         S.supprimerEmploye(e1);
         S.displayEmploye();
         System.out.println(S.rechercherEmploye("titi"));
-
+        System.out.println("************** Tri employé par ID : *************");
         S.trierEmployeParId();
         S.displayEmploye();
-
+        System.out.println("************** Tri employé par Depart et grade : *************");
         S.trierEmployeParNomDepartementEtGrade();
         S.displayEmploye();
     }
