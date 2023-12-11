@@ -1,5 +1,3 @@
-package employesManagement.interfaces;
-
 public interface IGestion<T> {
     public void ajouterEmploye(T t);
     public boolean rechercherEmploye(String nom);
@@ -9,4 +7,3 @@ public interface IGestion<T> {
     public void trierEmployeParId(); //Comparable
     public void trierEmployeParNomDepartementEtGrade(); //Comparator
 }
-
