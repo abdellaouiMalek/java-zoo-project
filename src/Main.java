@@ -30,7 +30,6 @@ public class Main {
     } */
         // -------------Prosit 10-------------------
         DepartementHashSet Depart = new DepartementHashSet();
-
         Depart.ajouterDepartement(new Departement(5, "info", 10));
         Depart.ajouterDepartement(new Departement(1, "chimie", 2));
         Depart.ajouterDepartement(new Departement(8, "math", 254));
