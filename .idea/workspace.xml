@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fda471ef-40cd-4676-981c-63e1f5ecea43" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/entities/Departement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/DepartementHashSet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/IDepartement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/AffectationHashMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -47,7 +45,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "prosit10",
+    "git-widget-placeholder": "prosit11",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",

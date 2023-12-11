@@ -1,0 +1,41 @@
+Index: src/Main.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import entities.Employe;\r\nimport entities.SocieteArrayList;\r\n\r\npublic class Main {\r\n    public static void main(String[] args) {\r\n        SocieteArrayList S = new SocieteArrayList();\r\n        Employe e1 = new Employe(1, \"Dridi\", \"Khalil\", \"27\", 2);\r\n        Employe e2 = new Employe(2, \"Seltana\", \"Malek\", \"22\", 4);\r\n        Employe e3 = new Employe(3, \"titi\", \"mimi\", \"A23\", 15);\r\n\r\n        S.ajouterEmploye(e2);\r\n        S.ajouterEmploye(e1);\r\n        S.ajouterEmploye(e3);\r\n        System.out.println(\"************** Recherche employé : *************\");\r\n        System.out.println(S.rechercherEmploye(e1));\r\n        S.displayEmploye();\r\n        System.out.println(\"************** Supprimer employé : *************\");\r\n        S.supprimerEmploye(e1);\r\n        S.displayEmploye();\r\n        System.out.println(S.rechercherEmploye(\"titi\"));\r\n        System.out.println(\"************** Tri employé par ID : *************\");\r\n        S.trierEmployeParId();\r\n        S.displayEmploye();\r\n        System.out.println(\"************** Tri employé par Depart et grade : *************\");\r\n        S.trierEmployeParNomDepartementEtGrade();\r\n        S.displayEmploye();\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Main.java b/src/Main.java
+--- a/src/Main.java	
++++ b/src/Main.java	
+@@ -1,8 +1,11 @@
+ import entities.Employe;
++import entities.Departement;
+ import entities.SocieteArrayList;
++import entities.DepartementHashSet;
+ 
+ public class Main {
+     public static void main(String[] args) {
++        /* -------------Prosit 9---------------------
+         SocieteArrayList S = new SocieteArrayList();
+         Employe e1 = new Employe(1, "Dridi", "Khalil", "27", 2);
+         Employe e2 = new Employe(2, "Seltana", "Malek", "22", 4);
+@@ -24,5 +27,17 @@
+         System.out.println("************** Tri employé par Depart et grade : *************");
+         S.trierEmployeParNomDepartementEtGrade();
+         S.displayEmploye();
++    } */
++        // -------------Prosit 10-------------------
++        DepartementHashSet Depart = new DepartementHashSet();
++        Depart.ajouterDepartement(new Departement(5, "info", 10));
++        Depart.ajouterDepartement(new Departement(1, "chimie", 2));
++        Depart.ajouterDepartement(new Departement(8, "math", 254));
++        System.out.println("************** Affichage départements : *************");
++        Depart.displayDepartement();
++        System.out.println("************** Recherche département : *************");
++        System.out.println(Depart.rechercherDepartement("physique"));
++        System.out.println("************** Tri département par ID : *************");
++        System.out.println(Depart.trierDepartementById());
+     }
+ }
+\ No newline at end of file
