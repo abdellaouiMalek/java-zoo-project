@@ -1,3 +1,8 @@
+package entities;
+
+import entities.Employe;
+import interfaces.IGestion;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;

@@ -1,3 +1,5 @@
+package entities;
+
 public class Employe implements Comparable<Employe>{
     private int ID;
     private String nom;
